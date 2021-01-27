@@ -10,14 +10,34 @@
     "sourceMap": true,
     "declaration": true,
     "target": "es2015",
-    "lib": ["es2017"],
+    "lib": [
+      "es2017"
+    ],
     "outDir": "dist",
     "rootDir": "./",
     "baseUrl": ".",
     "paths": {
-      "*": ["types/*"]
-    }
+      "*": [
+        "types/*"
+      ]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
   },
-  "include": ["src/**/*", "test/**/*"],
-  "exclude": ["node_modules/*", "./__tests__"]
+  "include": [
+    "src/**/*",
+    "test/**/*"
+  ],
+  "exclude": [
+    "node_modules/*",
+    "./__tests__"
+  ]
 }
